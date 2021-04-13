@@ -1,11 +1,9 @@
 import math
 import pandas as pd
 def get_required_dataframe(url):
-    tables = pd.read_html(url)
-    
+    tables = pd.read_html(url)    
     df = tables[0]
-    df = df.rename(columns={0: 'iata', 2: 'airport', 3: 'locations'})
-    
+    df = df.rename(columns={0: 'iata', 2: 'airport', 3: 'locations'})    
     del df[1]
     if url[-1] < 'N':
         del df[4]
