@@ -1,6 +1,5 @@
 import math
 import pandas as pd
-
 def get_required_dataframe(url):
     tables = pd.read_html(url)
     
