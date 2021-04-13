@@ -24,11 +24,9 @@ def get_required_dataframe(url):
         else:
             countries.append(location_array[0])
     df = df.assign(city=cities, country=countries)
-
     del df['locations']
     df.drop(df.index[:1], inplace=True)
     return df
-
 def main():
     final_df = None
     for i in range(65, 91):
