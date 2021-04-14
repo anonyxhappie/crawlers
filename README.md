@@ -1,5 +1,5 @@
 # crawlers
-This repo contains web-crawling scripts. The purpose is to understand how webcrawler works
+This repo contains web-crawling scripts. The purpose is to understand how webcrawler works. Updated.
 
 - airport_wiki.py
 - airports_wiki.py
